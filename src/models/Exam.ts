@@ -21,6 +21,6 @@ export class Exam {
   })
   type: ExamType;
 
-  @OneToMany(() => Question, (question) => question.exam)
+  @OneToMany(() => Question, (question) => question.exam, { cascade: true })
   questions: Question[];
 }

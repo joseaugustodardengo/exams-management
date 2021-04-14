@@ -20,6 +20,6 @@ export class Question {
   @OneToMany(() => Option, (option) => option.question)
   options: Option[];
 
-  @ManyToOne(() => Exam, (exam) => exam.questions, { eager: true })
+  @ManyToOne(() => Exam, (exam) => exam.questions)
   exam: Exam;
 }

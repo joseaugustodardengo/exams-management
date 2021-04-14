@@ -1,6 +1,10 @@
 import express from "express";
-// import routes from "./routes";
+
+import { examsRouter } from "./routes/exams.routes";
+import { questionsRouter } from "./routes/questions.routes";
 
 export const app = express();
 app.use(express.json());
-// app.use(routes);
+
+app.use("/questions", questionsRouter);
+app.use("/exams", examsRouter);
