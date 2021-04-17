@@ -1,4 +1,4 @@
-# VUTTR (Very Useful Tools to Remember - Ferramentas muito úteis para lembrar)
+# Exams Management
 
 A aplicação é um simples repositório para gerenciar provas e suas questões
 
@@ -39,6 +39,7 @@ $ yarn typeorm migration:run
 ```
 Caso queira, pode executar a aplicação através do Insominia no botão logo abaixo.
 
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=exams-management&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjoseaugustodardengo%2Fexams-management%2Fmain%2Fexport.json)
 ---
 
 ## Rotas da aplicação
