@@ -6,4 +6,4 @@ import "./database";
 
 dotenv.config();
 
-app.listen(3333, () => console.log("Server ir running."));
+app.listen(process.env.PORT || 3333, () => console.log("Server ir running."));

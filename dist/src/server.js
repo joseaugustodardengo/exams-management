@@ -8,4 +8,4 @@ require("reflect-metadata");
 var app_1 = require("./app");
 require("./database");
 dotenv_1.default.config();
-app_1.app.listen(3333, function () { return console.log("Server ir running."); });
+app_1.app.listen(process.env.PORT || 3333, function () { return console.log("Server ir running."); });
