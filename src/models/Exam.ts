@@ -21,6 +21,8 @@ export class Exam {
   })
   type: ExamType;
 
-  @OneToMany(() => Question, (question) => question.exam, { cascade: true })
+  @OneToMany(() => Question, (question) => question.exam, {
+    cascade: ["insert"],
+  })
   questions: Question[];
 }
